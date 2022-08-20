@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3fed258ad7cd4ae68412d1ff570898d9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3fed258ad7cd4ae68412d1ff570898d9" ></div>
+        
+</body>
+<script>    
+    
+            var map_3fed258ad7cd4ae68412d1ff570898d9 = L.map(
+                "map_3fed258ad7cd4ae68412d1ff570898d9",
+                {
+                    center: [-19.85127442270848, -43.977340452786066],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6f20a54c197a41f9ae03174c269fb877 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3fed258ad7cd4ae68412d1ff570898d9);
+        
+    
+            var tile_layer_76f3f203e9d2491eb709708aa426eefe = L.tileLayer(
+                "https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/maps/9e9783c86f887e8098361f78ccbc199d-a9945d671d0674613f7e53ce91c42aaa/tiles/{z}/{x}/{y}",
+                {"attribution": "Google Earth Engine", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3fed258ad7cd4ae68412d1ff570898d9);
+        
+    
+            var tile_layer_fc676db39ea749e8b43738238a8f175c = L.tileLayer(
+                "https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/maps/a47804a3cc43a8281a243b64699eb85a-1dfebd27302f41240c939a78b92714b4/tiles/{z}/{x}/{y}",
+                {"attribution": "Google Earth Engine", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3fed258ad7cd4ae68412d1ff570898d9);
+        
+    
+            var feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5 = L.featureGroup(
+                {}
+            ).addTo(map_3fed258ad7cd4ae68412d1ff570898d9);
+        
+    
+            var circle_marker_198bbd48377f4cc4a13c01a105563d7c = L.circleMarker(
+                [-19.844967, -43.967973],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_08379dd69c734e949f1f9f5fccc40920 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9284796df66443483e2f6cbd5de96cc = $(`<div id="html_b9284796df66443483e2f6cbd5de96cc" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>P3</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>08:01:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.844967</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.967973</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>13.75</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>1.2</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>1.3</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>1.25</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>1.3</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>1.4</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>1.35</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Sem nuvens, 16ºC, superf.água pouco agitada, pouco vento</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>4.0</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.04</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.006</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.006500000000000001</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.0035</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>P3</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figP3.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_08379dd69c734e949f1f9f5fccc40920.setContent(html_b9284796df66443483e2f6cbd5de96cc);
+        
+
+        circle_marker_198bbd48377f4cc4a13c01a105563d7c.bindPopup(popup_08379dd69c734e949f1f9f5fccc40920)
+        ;
+
+        
+    
+    
+            circle_marker_198bbd48377f4cc4a13c01a105563d7c.bindTooltip(
+                `<div>
+                     P3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0a2b3c125ad243bbad742a2eb83e704d = L.circleMarker(
+                [-19.845822, -43.968408],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_4229103e35554ada9edb5b5e2106d025 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f375e56a247c4d30b8fcb838979e0a98 = $(`<div id="html_f375e56a247c4d30b8fcb838979e0a98" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>PV240</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>08:41:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.845822</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.968408</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>14.0</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>1.4</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>1.5</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>1.45</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>1.4</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>1.4</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>1.4</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Céu claro, 18ºC, superf.água ondulada, pouco vento</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>3.0</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.03</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.005</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.006</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.003</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>PV240</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figPV240.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_4229103e35554ada9edb5b5e2106d025.setContent(html_f375e56a247c4d30b8fcb838979e0a98);
+        
+
+        circle_marker_0a2b3c125ad243bbad742a2eb83e704d.bindPopup(popup_4229103e35554ada9edb5b5e2106d025)
+        ;
+
+        
+    
+    
+            circle_marker_0a2b3c125ad243bbad742a2eb83e704d.bindTooltip(
+                `<div>
+                     PV240
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_00ea0a1be7044511a9d3405d4fa494fd = L.circleMarker(
+                [-19.84843, -43.969002],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_af5ae1c1434c49c991f616c80c41067d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff18f4ff894846af889dddb749205bf6 = $(`<div id="html_ff18f4ff894846af889dddb749205bf6" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>P6</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>09:10:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.84843</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.969002</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>12.0</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>1.3</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>1.2</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>1.25</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>1.4</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>1.35</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>1.375</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Poucas nuvens, 18ºC, superf.água ondulada, pouco vento</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>6.0</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.055</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.009</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.0095</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.0045000000000000005</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>P6</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figP6.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_af5ae1c1434c49c991f616c80c41067d.setContent(html_ff18f4ff894846af889dddb749205bf6);
+        
+
+        circle_marker_00ea0a1be7044511a9d3405d4fa494fd.bindPopup(popup_af5ae1c1434c49c991f616c80c41067d)
+        ;
+
+        
+    
+    
+            circle_marker_00ea0a1be7044511a9d3405d4fa494fd.bindTooltip(
+                `<div>
+                     P6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_207d2438360649e4ac68c3fb405ecb4f = L.circleMarker(
+                [-19.849585, -43.970467],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_9cc5baefd1824a789bed3a7c6b3e92f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e58e5a4edf7c4ea5afcdd4bfd471f928 = $(`<div id="html_e58e5a4edf7c4ea5afcdd4bfd471f928" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>P7</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>09:29:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.849585</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.970467</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>11.5</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>1.05</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>1.0</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>1.025</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>1.0</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>1.0</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>1.0</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Sol entre nuvens, 18ºC, superf.água ondulada, pouco vento</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>7.0</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.07</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.009999999999999998</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.011</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.0055</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>P7</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figP7.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_9cc5baefd1824a789bed3a7c6b3e92f7.setContent(html_e58e5a4edf7c4ea5afcdd4bfd471f928);
+        
+
+        circle_marker_207d2438360649e4ac68c3fb405ecb4f.bindPopup(popup_9cc5baefd1824a789bed3a7c6b3e92f7)
+        ;
+
+        
+    
+    
+            circle_marker_207d2438360649e4ac68c3fb405ecb4f.bindTooltip(
+                `<div>
+                     P7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0b2fd7be6f2146de817bfc4cd4335520 = L.circleMarker(
+                [-19.852623, -43.969735],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_6f3b92efdeb24d028c0a9ecb96dfbe8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b994af27e0241fc8d0c4aa572abc6ce = $(`<div id="html_6b994af27e0241fc8d0c4aa572abc6ce" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>M5</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>09:49:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.852623</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.969735</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>11.25</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>1.2</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>1.1</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>1.15</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>1.2</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>1.25</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>1.225</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Poucas nuvens, 19ºC, superf.água pouco ondulada, vento fraco</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>9.5</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.09</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.0125</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.0135</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.0085</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>M5</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figM5.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_6f3b92efdeb24d028c0a9ecb96dfbe8b.setContent(html_6b994af27e0241fc8d0c4aa572abc6ce);
+        
+
+        circle_marker_0b2fd7be6f2146de817bfc4cd4335520.bindPopup(popup_6f3b92efdeb24d028c0a9ecb96dfbe8b)
+        ;
+
+        
+    
+    
+            circle_marker_0b2fd7be6f2146de817bfc4cd4335520.bindTooltip(
+                `<div>
+                     M5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d1ff8d3cb892441598682114c7ddcfd8 = L.circleMarker(
+                [-19.852941, -43.972713],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_666c9e3b12a24808b3029a2695feee95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de617f2e3e624488b4b2402c76ac311d = $(`<div id="html_de617f2e3e624488b4b2402c76ac311d" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>P5</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>10:03:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.852941</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.972713</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>10.5</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>1.0</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>0.95</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>0.975</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>0.95</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>1.0</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>0.975</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Sol entre nuvens, 19ºC, superf.água ondulada, vento moderado</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>10.0</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.095</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.013000000000000001</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.013999999999999999</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.007</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>P5</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figP5.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_666c9e3b12a24808b3029a2695feee95.setContent(html_de617f2e3e624488b4b2402c76ac311d);
+        
+
+        circle_marker_d1ff8d3cb892441598682114c7ddcfd8.bindPopup(popup_666c9e3b12a24808b3029a2695feee95)
+        ;
+
+        
+    
+    
+            circle_marker_d1ff8d3cb892441598682114c7ddcfd8.bindTooltip(
+                `<div>
+                     P5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8f61e6b74f324f958f68b162c8bc2e47 = L.circleMarker(
+                [-19.851219, -43.97613],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_58e7f8612e5b42c0b9c56a5d352ac094 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bc05d9a6bee451ab59b6479a9236e5e = $(`<div id="html_5bc05d9a6bee451ab59b6479a9236e5e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>P2</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>10:19:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.851219</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.97613</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>9.0</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>0.9</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>0.8</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>0.8500000000000001</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>0.9</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>0.8</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>0.8500000000000001</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Sol entre nuvens, 21ºC, superf.água pouco ondulada, vento fraco</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>11.5</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.11</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.014499999999999999</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.015</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.0085</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>P2</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figP2.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_58e7f8612e5b42c0b9c56a5d352ac094.setContent(html_5bc05d9a6bee451ab59b6479a9236e5e);
+        
+
+        circle_marker_8f61e6b74f324f958f68b162c8bc2e47.bindPopup(popup_58e7f8612e5b42c0b9c56a5d352ac094)
+        ;
+
+        
+    
+    
+            circle_marker_8f61e6b74f324f958f68b162c8bc2e47.bindTooltip(
+                `<div>
+                     P2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8e0606bb92d14d2085d886e3c07b76e8 = L.circleMarker(
+                [-19.853187, -43.978973],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_b06240667c8d4e0aa242dfd67252ac32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f3e2295af4647ea9cfee92aa840c33e = $(`<div id="html_0f3e2295af4647ea9cfee92aa840c33e" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>M4</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>10:59:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.853187</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.978973</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>6.5</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>0.9</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>0.8</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>0.8500000000000001</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>0.8</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>0.8</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>0.8</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Sol entre nuvens, 22ºC, superf.água ondulada, vento fraco</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>9.0</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.09</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.0125</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.0135</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.006500000000000001</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>M4</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figM4.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_b06240667c8d4e0aa242dfd67252ac32.setContent(html_0f3e2295af4647ea9cfee92aa840c33e);
+        
+
+        circle_marker_8e0606bb92d14d2085d886e3c07b76e8.bindPopup(popup_b06240667c8d4e0aa242dfd67252ac32)
+        ;
+
+        
+    
+    
+            circle_marker_8e0606bb92d14d2085d886e3c07b76e8.bindTooltip(
+                `<div>
+                     M4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6768ba6b27fc45d4a6985d1129749b1c = L.circleMarker(
+                [-19.851429, -43.983786],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_2b18e59966f44391997a4c36ff32d5c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b744a04274a43089e37bfceab5d44ca = $(`<div id="html_8b744a04274a43089e37bfceab5d44ca" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>P2-PBH</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>11:18:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.851429</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.983786</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>1.95</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>0.4</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>0.3</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>0.35</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>0.3</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>0.35</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>0.32499999999999996</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Poucas nuvens, 22ºC, superf.água pouco ondulada, vento fraco</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>14.5</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.14500000000000002</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.017</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.016</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.008</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>P2-PBH</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figP2-PBH.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_2b18e59966f44391997a4c36ff32d5c9.setContent(html_8b744a04274a43089e37bfceab5d44ca);
+        
+
+        circle_marker_6768ba6b27fc45d4a6985d1129749b1c.bindPopup(popup_2b18e59966f44391997a4c36ff32d5c9)
+        ;
+
+        
+    
+    
+            circle_marker_6768ba6b27fc45d4a6985d1129749b1c.bindTooltip(
+                `<div>
+                     P2-PBH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d0796d8ff28d4d48a1f021fdce46fc90 = L.circleMarker(
+                [-19.850136, -43.986079],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_debb558643394bddb50643f31c0ef117 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6e38e67ba1f41dc91d5b93883eadaa7 = $(`<div id="html_c6e38e67ba1f41dc91d5b93883eadaa7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>M3</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>11:32:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.850136</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.986079</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>0.7</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>0.25</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>0.2</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>0.225</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>0.25</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>0.2</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>0.225</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Poucas nuvens, 23ºC, superf.água pouco ondulada, vento fraco</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>33.5</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.36</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.025</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.0215</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.010499999999999999</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>M3</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figM3.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_debb558643394bddb50643f31c0ef117.setContent(html_c6e38e67ba1f41dc91d5b93883eadaa7);
+        
+
+        circle_marker_d0796d8ff28d4d48a1f021fdce46fc90.bindPopup(popup_debb558643394bddb50643f31c0ef117)
+        ;
+
+        
+    
+    
+            circle_marker_d0796d8ff28d4d48a1f021fdce46fc90.bindTooltip(
+                `<div>
+                     M3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b0963eb43f84c2c8260edd3ab7c56d9 = L.circleMarker(
+                [-19.848281, -43.989199],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_d303f8126703445a8124dedad324632e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ddd12c7f66c4a38bcc22f597e8cfbfd = $(`<div id="html_8ddd12c7f66c4a38bcc22f597e8cfbfd" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>P1</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>11:52:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.848281</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.989199</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>0.9</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>0.2</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>0.1</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>0.15000000000000002</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>0.15</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>0.2</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>0.175</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Poucas nuvens, 23ºC, superf.água pouco ondulada, pouco vento</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>19.5</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.19</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.020499999999999997</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.0165</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.008</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>P1</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figP1.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_d303f8126703445a8124dedad324632e.setContent(html_8ddd12c7f66c4a38bcc22f597e8cfbfd);
+        
+
+        circle_marker_1b0963eb43f84c2c8260edd3ab7c56d9.bindPopup(popup_d303f8126703445a8124dedad324632e)
+        ;
+
+        
+    
+    
+            circle_marker_1b0963eb43f84c2c8260edd3ab7c56d9.bindTooltip(
+                `<div>
+                     P1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f07a9b57d8064aeb9970c49c7e6e8b38 = L.circleMarker(
+                [-19.84585, -43.991449],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_820221d5d27f4fd2aa43418a29ff45b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bb1422a216b4ca28731ef507cdf9cd5 = $(`<div id="html_2bb1422a216b4ca28731ef507cdf9cd5" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>PV230</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>11:58:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.84585</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.991449</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>0.9</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>0.15</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>0.1</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>0.125</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>0.15</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>0.15</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>0.15</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Pouquíssimas nuvens, 23ºC, superf.água pouco ondulada, pouco vento</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>15.5</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.155</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.018500000000000003</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.0155</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.0075</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>PV230</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figPV230.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_820221d5d27f4fd2aa43418a29ff45b8.setContent(html_2bb1422a216b4ca28731ef507cdf9cd5);
+        
+
+        circle_marker_f07a9b57d8064aeb9970c49c7e6e8b38.bindPopup(popup_820221d5d27f4fd2aa43418a29ff45b8)
+        ;
+
+        
+    
+    
+            circle_marker_f07a9b57d8064aeb9970c49c7e6e8b38.bindTooltip(
+                `<div>
+                     PV230
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_559d042b8b894cdc9689b54ac78d3168 = L.circleMarker(
+                [-19.855996, -43.978706],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_284d52f82e6e48188db8748aa1344c3d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dce9d53dad484d2c83e28f34999e1fd7 = $(`<div id="html_dce9d53dad484d2c83e28f34999e1fd7" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>PV235</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>12:17:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.855996</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.978706</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>7.5</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>1.0</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>0.9</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>0.95</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>0.9</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>0.85</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>0.875</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Sem nuvens, 23ºC, superf.água pouco ondulada, pouco vento</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>9.0</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.08499999999999999</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.012</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.012</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.007</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>PV235</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figPV235.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_284d52f82e6e48188db8748aa1344c3d.setContent(html_dce9d53dad484d2c83e28f34999e1fd7);
+        
+
+        circle_marker_559d042b8b894cdc9689b54ac78d3168.bindPopup(popup_284d52f82e6e48188db8748aa1344c3d)
+        ;
+
+        
+    
+    
+            circle_marker_559d042b8b894cdc9689b54ac78d3168.bindTooltip(
+                `<div>
+                     PV235
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7a1192496714cd8ada5d5aa063c341f = L.circleMarker(
+                [-19.858514, -43.980824],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_8c82db448a684d2cb072b0b4f7bf71f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5882508bbb9404d89fa861f967c5d49 = $(`<div id="html_a5882508bbb9404d89fa861f967c5d49" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>M2</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>12:27:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.858514</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.980824</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>2.5</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>0.9</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>0.85</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>0.875</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>0.8</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>0.85</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>0.825</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Sem nuvens, 23ºC, superf.água pouco ondulada, pouco vento</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>10.0</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>2.736666666666667</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>2.676</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>2.676</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>2.672</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>M2</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figM2.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_8c82db448a684d2cb072b0b4f7bf71f7.setContent(html_a5882508bbb9404d89fa861f967c5d49);
+        
+
+        circle_marker_c7a1192496714cd8ada5d5aa063c341f.bindPopup(popup_8c82db448a684d2cb072b0b4f7bf71f7)
+        ;
+
+        
+    
+    
+            circle_marker_c7a1192496714cd8ada5d5aa063c341f.bindTooltip(
+                `<div>
+                     M2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5d5ad7581e2c4a3a992a20621c09d7fd = L.circleMarker(
+                [-19.860134, -43.976663],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000000", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 0}
+            ).addTo(feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5);
+        
+    
+        var popup_6c5bbc8a1eb54954b0c4b72311ac6373 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ec826080a5548508563ff9a40bacb94 = $(`<div id="html_5ec826080a5548508563ff9a40bacb94" style="width: 100.0%; height: 100.0%;"><!DOCTYPE html>     <html>     <head>     <style>.container {   font-family: Arial, Helvetica, sans-serif;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 500px;   height: 500px;   display: block;   overflow-y: scroll;   padding: 0px; }   .tabela {   font-family: Arial, Helvetica, sans-serif;   border-collapse: collapse;   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);   width: 100%;   overflow: scroll; }  .tabela td, .tabela th {   border: 1px solid #ddd;   padding: 8px; }  .tabela tr:nth-child(even){background-color: #f2f2f2;}  .tabela tr:hover {background-color: #ddd;}  .tabela th {   padding-top: 12px;   padding-bottom: 12px;   text-align: left;   background-color: #04AA6D;   color: white; }</style>     </head>     <body>     <div class="container">                     <table class="tabela">                     <tr>                         <th>Variáveis</th>                         <th>Valores</th>                     </tr>                                          <tr>                         <td>Data</td>                         <td>2022-07-25 00:00:00</td>                     </tr>                          <tr>                         <td>Ponto de Coleta</td>                         <td>M1</td>                     </tr>                          <tr>                         <td>Hora</td>                         <td>12:39:00</td>                     </tr>                          <tr>                         <td>Horário (Sonda)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Latitude inicial</td>                         <td>-19.860134</td>                     </tr>                          <tr>                         <td>Longitude inicial</td>                         <td>-43.976663</td>                     </tr>                          <tr>                         <td>Latitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Longitude final</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Profundidade Máxima (m)</td>                         <td>3.0</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 1 (m)</td>                         <td>0.85</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 1 (m)</td>                         <td>0.8</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 1 (m)</td>                         <td>0.825</td>                     </tr>                          <tr>                         <td>Disco de Secchi Descida - Medida 2 (m)</td>                         <td>0.75</td>                     </tr>                          <tr>                         <td>Disco de Secchi Subida - Medida 2 (m)</td>                         <td>0.7</td>                     </tr>                          <tr>                         <td>Disco de Secchi Média - Medida 2 (m)</td>                         <td>0.725</td>                     </tr>                          <tr>                         <td>Profundidade de coleta da amostra (m)</td>                         <td>0.18</td>                     </tr>                          <tr>                         <td>Turbidez (Turbidímetro)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>Condições</td>                         <td>Sem nuvens, 23ºC, superf.água pouco ondulada, pouco vento</td>                     </tr>                          <tr>                         <td>Volume de dilluição (mL)</td>                         <td>nan</td>                     </tr>                          <tr>                         <td>media_turbidez_hc (NTU)</td>                         <td>9.0</td>                     </tr>                          <tr>                         <td>espalhamento_medio_hc (1/m)</td>                         <td>0.1</td>                     </tr>                          <tr>                         <td>ref_azul_media_hc (1/sr)</td>                         <td>0.013000000000000001</td>                     </tr>                          <tr>                         <td>ref_verde_media_hc (1/sr)</td>                         <td>0.012</td>                     </tr>                          <tr>                         <td>ref_verm_media_hc (1/sr)</td>                         <td>0.006500000000000001</td>                     </tr>                          <tr>                         <td>Ponto</td>                         <td>M1</td>                     </tr>                          <tr>                         <td>html_file</td>                         <td><iframe src="figM1.html" width="500" height="350"  frameborder="0"></td>                     </tr>                     </table>              </div>     </body>     </html></div>`)[0];
+            popup_6c5bbc8a1eb54954b0c4b72311ac6373.setContent(html_5ec826080a5548508563ff9a40bacb94);
+        
+
+        circle_marker_5d5ad7581e2c4a3a992a20621c09d7fd.bindPopup(popup_6c5bbc8a1eb54954b0c4b72311ac6373)
+        ;
+
+        
+    
+    
+            circle_marker_5d5ad7581e2c4a3a992a20621c09d7fd.bindTooltip(
+                `<div>
+                     M1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var tile_layer_bad9b983b5d1429f8bc68fb79d93760b = L.tileLayer(
+                "https://earthengine.googleapis.com/v1alpha/projects/earthengine-legacy/maps/a96fb5fe5011144fb41fd98c837e86a8-7070f64e2b002f806237b706d57bf216/tiles/{z}/{x}/{y}",
+                {"attribution": "Google Earth Engine", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3fed258ad7cd4ae68412d1ff570898d9);
+        
+    
+            var layer_control_bcf39fc61014407a8ec27b3d60d3b04e = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_6f20a54c197a41f9ae03174c269fb877,
+                },
+                overlays :  {
+                    "Landsat-9 2022-07-25" : tile_layer_76f3f203e9d2491eb709708aa426eefe,
+                    "Sentinel-2 2022-07-25" : tile_layer_fc676db39ea749e8b43738238a8f175c,
+                    "Pontos Monitoramento" : feature_group_4c286e0eaa8c43f6bc1fefd08da0fcb5,
+                    "Buffer (900m\u00b2)" : tile_layer_bad9b983b5d1429f8bc68fb79d93760b,
+                },
+            };
+            L.control.layers(
+                layer_control_bcf39fc61014407a8ec27b3d60d3b04e.base_layers,
+                layer_control_bcf39fc61014407a8ec27b3d60d3b04e.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_3fed258ad7cd4ae68412d1ff570898d9);
+        
+</script>
